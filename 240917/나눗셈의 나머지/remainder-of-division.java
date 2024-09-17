@@ -6,7 +6,6 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         int a = sc.nextInt();
         int b = sc.nextInt();
-        
         int cnt = 0;
         int[] arr = new int[100];
         for(int i=0; i<arr.length; i++){
@@ -18,8 +17,8 @@ public class Main {
             cnt++;
         }
 
-        int[] rest = new int[cnt];
-        for(int j=0; j<rest.length; j++){
+        int[] rest = new int[10];
+        for(int j=0; j<cnt; j++){
             rest[arr[j]]++;
         }
 
@@ -31,7 +30,7 @@ public class Main {
             }
         }
 
-        System.out.print(sum);
+        System.out.println(sum);
 
 
     }
