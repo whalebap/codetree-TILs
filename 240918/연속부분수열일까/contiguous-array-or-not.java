@@ -27,7 +27,8 @@ public class Main {
             if(arr1[k]==arr2[0]){
                 firstIndex = k;
             }
-            if(firstIndex > -1 && arr1[firstIndex+n2-1] == arr2[n2-1]){
+            boolean isCoverableIndex = firstIndex > -1 && firstIndex + n2 <=n1;
+            if(isCoverableIndex && arr1[firstIndex+n2-1] == arr2[n2-1]){
                 msg="Yes";
                 break;
             }
