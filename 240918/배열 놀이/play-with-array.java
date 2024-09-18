@@ -12,8 +12,8 @@ public class Main {
 
         for(int i=0; i<n; i++){
             arr[i]=sc.nextInt();
+            
         }
-
 
         for(int j=0; j<q; j++){
             int first = sc.nextInt();
@@ -48,9 +48,9 @@ public class Main {
                 for(int l=second; l<=third; l++){
                     System.out.print(arr[l-1] + " ");
                 }
+                System.out.println();
             }
-
+            
         }
-        
     }
 }
