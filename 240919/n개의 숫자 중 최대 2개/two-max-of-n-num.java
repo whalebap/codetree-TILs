@@ -1,4 +1,7 @@
 import java.util.Scanner;
+import java.util.Arrays;
+import java.util.Collections;
+import java.lang.Integer;
 
 public class Main {
     public static void main(String[] args) {
@@ -8,23 +11,16 @@ public class Main {
 
         int length = sc.nextInt();
 
-        int[] arr = new int[length];
+        Integer[] arr = new Integer[length];
 
         int MIN_INT = Integer.MIN_VALUE;
         for(int i=0; i<arr.length; i++){
             arr[i] = sc.nextInt();
         }
 
-        int MIN_INT2 = Integer.MIN_VALUE;
-        for(int j=0; j<arr.length; j++){
-            if(arr[j] > MIN_INT){
-                MIN_INT = arr[j];
-            }
-             if(arr[j] >= MIN_INT2 && arr[j] <= MIN_INT){
-                MIN_INT2 = arr[j];
-            }
-        }
+        Arrays.sort(arr,Collections.reverseOrder());
 
-        System.out.print(String.format("%d %d", MIN_INT, MIN_INT2));
+
+        System.out.print(String.format("%d %d", arr[0], arr[1]));
     }
 }
