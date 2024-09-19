@@ -20,7 +20,7 @@ public class Main {
             if(arr[j] > MIN_INT){
                 MIN_INT = arr[j];
             }
-             if(arr[j] > MIN_INT2 && arr[j] < MIN_INT){
+             if(arr[j] > MIN_INT2 && arr[j] <= MIN_INT){
                 MIN_INT2 = arr[j];
             }
         }
