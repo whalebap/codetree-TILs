@@ -15,6 +15,7 @@ public class Main {
             arr[i] = sc.nextInt();
         }
 
+
         for(int j=0; j<arr.length; j++){
             boolean exsistSame = false;
 
@@ -29,15 +30,15 @@ public class Main {
                 continue;
             }
 
+            
             if(arr[j]>INT_MIN){
                 INT_MIN = arr[j];
                 idx = j;
             }
 
-
         }
-
-        System.out.println(idx);
+        
+        System.out.println(idx > -1 ? arr[idx] : idx);
 
     }
 
