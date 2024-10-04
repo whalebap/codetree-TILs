@@ -10,10 +10,8 @@ public class Main {
         String first = "";
 
         char[] arr = firstStr.toCharArray();
-        for(int i=0; i<arr.length; i++){
-            
-            
-            if(Character.getNumericValue(arr[i]) < 0){
+        for(int i=0; i<arr.length; i++){     
+            if(!Character.isDigit(arr[i])){
                 break;
             } else {
                 first += arr[i];
@@ -26,7 +24,7 @@ public class Main {
         arr = secondStr.toCharArray();
         for(int i=0; i<arr.length; i++){
             
-            if(Character.getNumericValue(arr[i]) < 0){
+              if(!Character.isDigit(arr[i])){
                 break;
             } else {
                 second += arr[i];
