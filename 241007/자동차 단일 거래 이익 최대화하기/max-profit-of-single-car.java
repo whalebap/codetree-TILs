@@ -17,9 +17,10 @@ public class Main {
             if(i==0){
                 min = arr[i];
             } else {
-                if(arr[i] < min)
-                min = arr[i];
-                minCnt = i;
+                if(arr[i] < min){
+                    min = arr[i];
+                    minCnt = i;
+                }
             }
         }
 
@@ -28,7 +29,6 @@ public class Main {
                 max = arr[j];
             }
         }
-
         System.out.println(max-min > 0 ? max-min : 0);
     }
 }
