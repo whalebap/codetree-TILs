@@ -11,7 +11,7 @@ public class Main {
             if(arr1[i] == arr2[0]){
 
                 for(int j = i; j<i+arr2.length; j++){
-                    if(i+arr2.length-1 > arr1.length){
+                    if(i+arr2.length-1 >= arr1.length){
                         break;
                     }
 
