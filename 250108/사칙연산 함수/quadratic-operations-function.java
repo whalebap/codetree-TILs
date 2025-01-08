@@ -14,6 +14,7 @@ public class Main {
             case '*' : answer = a * c;
             break;
             case '/' : answer = a / c;
+            break;
             default : isCalculateStr = false;
                    
         }
