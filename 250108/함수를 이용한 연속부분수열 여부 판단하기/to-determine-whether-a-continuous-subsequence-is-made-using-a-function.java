@@ -15,7 +15,7 @@ public class Main {
                         break;
                     }
 
-                    if(arr1[j] == arr2[j-1]){
+                    if(arr1[j] == arr2[j-i]){
                         cnt ++;
                     }
                 }
