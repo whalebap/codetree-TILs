@@ -6,6 +6,10 @@ public class Main {
         
         int maxDay = 31;
 
+        if(month > 12){
+            return false;
+        }
+
         if(month == 2){
             maxDay = 28;
         } else if(month == 8){
