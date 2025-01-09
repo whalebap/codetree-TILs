@@ -9,7 +9,7 @@ public class Main {
         if(year % 4 == 0){
             isLunarYear = true;
 
-            if(year % 200 == 0){
+            if(year % 100 == 0){
                 isLunarYear = false;
 
                 if(year % 400 == 0){
