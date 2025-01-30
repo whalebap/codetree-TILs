@@ -33,9 +33,10 @@ public class Main {
             if(j== n-1){
                 break;
             }
-            if((arr[j].name).compareTo(arr[j+1].name) < 0){
+            if((arr[idx].name).compareTo(arr[j+1].name) < 0){
                 idx = j+1;
-            }
+            } 
+
         }
 
         System.out.println("name "+ arr[idx].name);
