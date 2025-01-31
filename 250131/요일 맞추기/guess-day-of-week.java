@@ -7,12 +7,12 @@ public class Main {
     static String[] days = new String[]{"Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"};
     static String[] reversedDays = new String[]{"Mon", "Sun", "Sat", "Fri", "Thu", "Wed", "Tue"};
     
-    static int[] numOfMonth = new int[]{0, 31,28,31,30,31,30,31,31,30,31,30,31};
+    static int[] numOfMonth = new int[]{0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
 
     public static int getAbsDay(int month, int day){
 
         int count = 0;
-        for(int i=1; i<=month; i++){
+        for(int i=1; i<month; i++){
             count += numOfMonth[i];
         }
         count += day;
@@ -33,9 +33,12 @@ public class Main {
         int secondCount = getAbsDay(m2, d2);
 
         int gap = secondCount - firstCount;
+
         gap %= 7;
 
         String answer = "";
+
+        
 
         if(gap >= 0){
             
