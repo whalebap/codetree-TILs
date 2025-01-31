@@ -2,11 +2,24 @@ import java.util.Scanner;
 
 public class Main {
 
-    public static int caculateMinutes(int day, int hour, int minute){
+    public static boolean checkValidDay(int day, int hour, int minute){
 
-         if(!(day >= 11 && hour >= 11 && minute >=11)){
-            return -1;
+        boolean isValid = false;
+        if(day >11){
+            return true;
         }
+        if(day == 11 && hour >11){
+            return true;
+        }
+        if(day == 11 && hour == 11 && minute >= 11){
+            return true;
+        }
+        return isValid;
+        
+    }
+
+    public static int caculateMinutes(int day, int hour, int minute){
+       
 
         int passedMinutes = 0;
         
@@ -45,7 +58,13 @@ public class Main {
         int hour = sc.nextInt();
         int minute = sc.nextInt();
 
-        System.out.println(caculateMinutes(day, hour, minute));
+        boolean isValidDay = checkValidDay(day, hour, minute);
+        if(isValidDay){
+            System.out.println(caculateMinutes(day, hour, minute));
+        } else {
+            System.out.println(-1);
+        }
+        
        
     }
 }
