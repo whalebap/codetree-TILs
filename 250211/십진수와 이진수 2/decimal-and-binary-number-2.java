@@ -23,7 +23,7 @@ public class Main {
         }
 
         demical *= 17;
-        int[] digits = new int[10];
+        int[] digits = new int[20];
         cnt = 0;
 
         while(true){
