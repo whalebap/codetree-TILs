@@ -16,7 +16,9 @@ public class Main {
 
             int first = sc.nextInt();
             int second = sc.nextInt();
-
+            first += 100;
+            second += 100;
+            
             for(int j=0; j<200; j++){
                 if(j>=first && j<=second-1){
                     arr[j]++;
